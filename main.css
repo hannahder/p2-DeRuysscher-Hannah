@@ -1,0 +1,66 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+.about {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 800;
+  font-size: 5rem;
+}
+
+.service img {
+  max-width: 600px;
+  width: 100%;
+}
+
+.adopt {
+  background-image: url("images/leatherback.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+
+.adopt h1, .adopt p {
+  color: white;
+}
+
+.adopt p {
+  max-width: 450px;
+}
+
+.adopt-text {
+  max-width: 1400px;
+  margin: auto;
+  width: 100%;
+  padding-top: 200px;
+}

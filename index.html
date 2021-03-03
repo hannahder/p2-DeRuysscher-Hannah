@@ -13,6 +13,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
 
   </head>
 
@@ -20,29 +26,41 @@
 
     <header>
 
+<!-- Logo -->
+
       <a href="index.html">
         <img src="images/logo.png" alt="Logo"/>
       </a>
+
+<!-- Hamburger Menu -->
 
       <button class="hamburger">&#9776;</button>
   	 	<button class="cross">&#735;</button>
 
   		 		<nav class="menu">
   					<ul>
-  						<li><a href="about.html">About Us</a></li>
-  						<li><a href="services.html">Our Services</a></li>
-  						<li><a href="contact.html">Contact Us</a></li>
+  						<li><a href="about.html">ABOUT</a></li>
+  						<li><a href="#">SEA TURTLES</a></li>
+  						<li><a href="#">SUPPORT</a></li>
+              <li><a href="#">LEARN</a></li>
+  						<li><a href="#">CONNECT</a></li>
+  						<li><a href="#">DONATE</a></li>
   					</ul>
   				</nav>
+
+<!-- Desktop Menu -->
 
   				<nav class="desktop-menu">
             <ul class="navbar">
               <li class="li-logo"><a href="index.html"></a>
                 <img class="logo" src="images/logo.png" alt="Logo"/>
               </li>
-  						<li><a href="about.html">About Us</a></li>
-  						<li><a href="services.html">Our Services</a></li>
-  						<li><a href="contact.html">Contact Us</a></li>
+  						<li><a href="about.html">ABOUT</a></li>
+  						<li><a href="#">SEA TURTLES</a></li>
+  						<li><a href="#">SUPPORT</a></li>
+            	<li><a href="#">LEARN</a></li>
+  						<li><a href="#">CONNECT</a></li>
+  						<li><a href="#">DONATE</a></li>
   					</ul>
   				</nav>
 
@@ -50,27 +68,48 @@
 
     <main>
 
-      <div>
-        <img src="#" alt="baby sea turtle" />
-          <h2>Florida's most visited nonprofit scientific destinations focused on ocean and sea turtle conservation.</h2>
-      </div>
+<!-- Hero Image Section -->
 
       <div>
-        <img src="#" alt="baby sea turtle" />
-          <h2>We are focused on the conservation and rehabilitation of sea turtles.</h2>
+        <img class="hero" src="images/turtle-edit.jpg" alt="baby sea turtle" />
+        <h1 class="text">LOGGERHEAD MARINELIFE CENTER</h1>
       </div>
 
-      <div>
-        <img src="#" alt="baby sea turtle" />
+<!-- About Section -->
+
+      <div class="about">
+        <h1>Florida's most visited nonprofit scientific destination focused on ocean and sea turtle conservation.</h1>
+      </div>
+
+<!-- Services Section -->
+
+      <div class="container">
+        <div class="service">
+          <img src="images/conservation.jpg" alt="Conservation" />
+          <h1>Conservation</h1>
+        </div>
+
+        <div class="service">
+          <img src="images/rehabilitation.jpg" alt="Rehabilitation" />
+          <h1>Rehabilitation</h1>
+        </div>
+      </div>
+
+<!-- Adopt A Sea Turtle Section -->
+
+      <div class="adopt">
+        <div class="adopt-text">
           <h1>Adopt A Sea Turtle</h1>
           <p>You can support us by adopting a sea turtle patient for just $40. Your adoption directly benefits the continued care and treatment of our sick and injured sea turtles.</p>
           <div class="content button-wrapper">
             <a class="button cta-button" href="#">Learn More</a>
           </div>
+        </div>
       </div>
 
-      <div>
+<!-- API Nesting Section -->
 
+      <div>
         <img src="#" alt="South Florida" />
         <h1>2021 Sea Turtle Nesting</h1>
 
@@ -88,16 +127,15 @@
           <h3>Green</h3>
           <p> Nests</p>
         </div>
-
       </div>
 
-      <div>
+<!-- Learn More Section -->
 
+      <div>
         <h1>Learn how you can make a difference today</h1>
         <div class="content button-wrapper">
           <a class="button cta-button" href="#">Learn More</a>
         </div>
-        
       </div>
 
     </main>
