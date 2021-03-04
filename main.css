@@ -10,6 +10,10 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 
 /* Hamburger menu */
 
+.logo {
+  max-width: 300px;
+}
+
 nav {
   height: 10vh;
   background: #ffffff;
@@ -188,19 +192,19 @@ body {
 
 /* Adopt A Sea Turtle Section */
 
-.adopt {
+.adopt-container {
   background-color: #d9cfba;
   height: 800px;
+  color: white;
 }
 
-.adopt h1 {
+.adopt-text {
   font-size: 3rem;
-  padding-top: 50px;
+  padding-top: 70px;
   color: white;
   max-width: 1250px;
   margin: auto;
 }
-
 
 /* Carousel */
 
@@ -210,8 +214,9 @@ body {
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  height: 1000px;
+  height: 700px;
   background-color: #d9cfba;
+  padding-bottom: 80px;
 }
 
 #wrapper {
@@ -272,6 +277,36 @@ body {
 
 /* End Carousel */
 
+/* API */
+
+
+.nesting-section {
+  max-width: 1250px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  padding-top: 116px;
+}
+.florida {
+  max-width: 600px;
+}
+
+.nesting-section h1 {
+  padding-top: 300px;
+  padding-bottom: 50px;
+}
+
+.nesting-numbers h3 {
+  padding-bottom: 50px;
+}
+
+.nesting-numbers {
+  display: flex;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
 .learn {
   background-image: url("images/underwater.jpg");
   background-size: cover;
@@ -321,13 +356,30 @@ body {
   transition-duration: .3s;
 }
 
-@media (min-width: 1300px) {
-  .masonry {
-    columns: 2;
+/* Footer */
+
+footer {
+  height: 150px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+footer ul {
+  padding-top: 60px;
+}
+
+footer ul li {
+  display: inline;
+  padding-left: 50px;
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1800px) {
   .hero {
     height: 800px;
   }
@@ -338,8 +390,52 @@ body {
   }
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
+@media (max-width: 1299px) {
+  .text-container, .adopt-text {
+    padding-left: 40px;
+  }
+
+  .learn h1 {
+    max-width: 700px;
+  }
+
+  .masonry-wrapper {
+    max-width: 1100px;
+    padding: 100px 0;
+  }
+
+  .beach {
+    display: none;
+  }
+
+  #wrapper {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1184px) {
+  .masonry-wrapper {
+    width: 90%;
+  }
+
+  .turtle {
+    max-width: 600px;
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 782px) {
+  footer ul li {
+    display: block;
+    padding-left: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .masonry {
+    columns: 2;
   }
 }
