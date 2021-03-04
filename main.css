@@ -11,7 +11,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 /* Hamburger menu */
 
 .logo {
-  max-width: 300px;
+  max-width: 250px;
+  width: 100%;
 }
 
 nav {
@@ -68,18 +69,18 @@ nav {
 
   .nav-links {
     position: fixed;
-    background: #ffffff;
+    background:  #d9cfba;
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
+    clip-path: circle(100px at 90% -18%);
+    -webkit-clip-path: circle(100px at 90% -18%);
     transition: all 1s ease-out;
     pointer-events: none;
   }
   .nav-links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
+    clip-path: circle(828px at 90% -10%);
+    -webkit-clip-path: circle(828px at 90% -10%);
     pointer-events: all;
   }
   .landing {
@@ -87,7 +88,7 @@ nav {
   }
   .nav-links li {
     opacity: 0;
-    margin-top: 65px;
+    margin-top: 35px;
   }
   .nav-links li a {
     font-size: 25px;
@@ -281,13 +282,11 @@ body {
 
 
 .nesting-section {
-  max-width: 1250px;
-  width: 100%;
-  margin: auto;
   display: flex;
   flex-flow: row;
   padding-top: 116px;
 }
+
 .florida {
   max-width: 600px;
 }
@@ -352,7 +351,8 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #777;
+  background-color: black;
+  color: white;
   transition-duration: .3s;
 }
 
@@ -393,6 +393,7 @@ footer ul li {
 @media (max-width: 1299px) {
   .text-container, .adopt-text {
     padding-left: 40px;
+    padding-right: 20px;
   }
 
   .learn h1 {
@@ -425,17 +426,105 @@ footer ul li {
 }
 
 
-
 @media (max-width: 782px) {
   footer ul li {
     display: block;
     padding-left: 40px;
     padding-bottom: 40px;
   }
+
+  .hero, .learn {
+    height: 500px;
+  }
+
+  .text {
+  font-size: 2rem;
+  padding-top: 100px;
+  }
+
+  .text-2 {
+    font-size: 1.4rem;
+  }
+
+  .masonry-item-text h1, .adopt-text, .learn h1 {
+    font-size: 2rem;
+  }
+
+  .learn h1 {
+    padding: 100px 15px 0 15px;
+  }
+
+  .item {
+    width: 450px;
+    height: 300px;
+  }
+
+  .body-carousel, .adopt-container {
+    height: 300px;
+  }
+
+  .adopt-container {
+    margin-bottom: 228px;
+  }
+
+  .adopt-text {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .nesting-section {
+    background-image: url("images/florida.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-flow: column wrap;
+    margin: auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 0;
+  }
+
+  .nesting-section h1 {
+    padding-top: 100px;
+  }
+
+  .nesting-numbers {
+    height: 570px;
+    padding-left: 30px;
+  }
+
+  .florida {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .nav-links li {
+    margin-top: 36px;
+  }
 }
 
 @media (min-width: 1300px) {
   .masonry {
     columns: 2;
+  }
+}
+
+@media (min-width: 782px) {
+  .nesting-numbers {
+    margin-left: -200px;
+  }
+
+  .nesting-section {
+    margin: auto;
+    max-width: 1250px;
+  }
+}
+
+
+@media (min-width: 347px) and (max-width: 781px) {
+  .adopt-container {
+    margin-bottom: 184px;
   }
 }
