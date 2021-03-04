@@ -28,29 +28,32 @@
 
 <!-- Logo -->
 
-      <a href="index.html">
-        <img src="images/logo.png" alt="Logo"/>
-      </a>
+
 
 <!-- Hamburger Menu -->
 
-      <button class="hamburger">&#9776;</button>
-  	 	<button class="cross">&#735;</button>
+      <nav>
 
-  		 		<nav class="menu">
-  					<ul>
-  						<li><a href="about.html">ABOUT</a></li>
-  						<li><a href="#">SEA TURTLES</a></li>
-  						<li><a href="#">SUPPORT</a></li>
-              <li><a href="#">LEARN</a></li>
-  						<li><a href="#">CONNECT</a></li>
-  						<li><a href="#">DONATE</a></li>
-  					</ul>
-  				</nav>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#"><img class="logo" src="images/logo.png" alt="Logo"/></a></li>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">SEA TURTLES</a></li>
+          <li><a href="#">SUPPORT</a></li>
+          <li><a href="#">LEARN</a></li>
+          <li><a href="#">CONNECT</a></li>
+          <li><a href="#">DONATE</a></li>
+        </ul>
+      </nav>
 
 <!-- Desktop Menu -->
 
-  				<nav class="desktop-menu">
+  				<!-- <nav class="desktop-menu">
             <ul class="navbar">
               <li class="li-logo"><a href="index.html"></a>
                 <img class="logo" src="images/logo.png" alt="Logo"/>
@@ -62,7 +65,7 @@
   						<li><a href="#">CONNECT</a></li>
   						<li><a href="#">DONATE</a></li>
   					</ul>
-  				</nav>
+  				</nav> -->
 
     </header>
 
@@ -71,31 +74,24 @@
 <!-- Hero Image Section -->
 
       <div class="hero">
-        <h1 class="text">LOGGERHEAD MARINELIFE CENTER</h1>
-      </div>
-
-<!-- About Section -->
-      <div class="box-flex box-flex-center">
-        <h1 class="box-caption">Florida's most visited nonprofit scientific destination focused on ocean and sea turtle conservation.</h1>
-        <img class="box-img" src="images/background.png" alt="background" />
+        <div class="text-container">
+          <h1 class="text">LOGGERHEAD MARINELIFE CENTER</h1>
+          <h2 class="text-2">Florida's most visited nonprofit scientific destination focused on ocean and sea turtle conservation.</h2>
+        </div>
       </div>
 
 <!-- Services Section -->
 
-      <h1>What We Do</h1>
-      
-      <div class="container">
+      <div class="services">
+        <div class="services-text">
+          <h1>What We Do</h1>
+          <p>We are focused on the conservation and rehabilitation of sea turtles.</p>
+        </div>
+        <img id="beach" src="images/beach.jpg" alt="#" />
+      </div>
 
-        <section>
-          <h1>Conservation</h1>
-          <img src="images/cons.jpg" alt="Conservation" />
-        </section>
-
-        <section>
-          <h1>Rehabilitation</h1>
-          <img src="images/rehab.jpg" alt="Rehabilitation" />
-        </section>
-
+      <div>
+      <img id="turtle" src="images/turtle.jpg" alt="#" />
       </div>
 
 <!-- Adopt A Sea Turtle Section -->
@@ -103,10 +99,6 @@
       <div class="adopt">
         <div class="adopt-text">
           <h1>Adopt A Sea Turtle</h1>
-          <p>You can support us by adopting a sea turtle patient for just $40. Your adoption directly benefits the continued care and treatment of our sick and injured sea turtles.</p>
-          <div class="content button-wrapper">
-            <a class="button cta-button" href="#">Learn More</a>
-          </div>
         </div>
       </div>
 
@@ -143,3 +135,6 @@
       </div>
 
     </main>
+    <script src="main.js"></script>
+  </body>
+</html>
