@@ -373,6 +373,77 @@ footer ul li {
   padding-left: 50px;
 }
 
+/* ABOUT US PAGE */
+
+.about {
+  background-image: url("images/beach-edit.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.about-text {
+  padding-bottom: 200px;
+}
+
+.about-us {
+  max-width: 1250px;
+  margin: auto;
+  height: 400px;
+  padding-top: 200px;
+}
+
+.about-us h1 {
+  padding-bottom: 10px;
+}
+
+.about-us p {
+  padding-bottom: 50px;
+}
+
+#bckgd {
+  background-color: #267373;
+  width: 100%;
+  height: 450px;
+}
+
+#bckgd h1 {
+  max-width: 1250px;
+  margin:auto;
+  color: white;
+  padding-top: 70px;
+}
+
+.history-background {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.history {
+  padding-top: 70px;
+  max-width: 350px;
+  color: white;
+}
+
+.condensed {
+  height: 0px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.show {
+  height: 120px;
+  transition: height 1s;
+}
+
+
+
+
 @media only screen and (max-device-width: 1366px) {
   .parallax {
     background-attachment: scroll;

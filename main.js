@@ -11,34 +11,53 @@ hamburger.addEventListener("click", () => {
   });
 });
 
+// Click to Reveal Content
 
-// Carousel
+var histLinks = document.getElementsByClassName('history-content');
 
-const gap = 16;
+function toggleDropdown() {
+  this.children[1].classList.toggle('show');
+}
 
-const carousel = document.getElementById("carousel"),
-  content = document.getElementById("content"),
-  next = document.getElementById("next"),
-  prev = document.getElementById("prev");
+for(i=0; i < histLinks.length; i++) {
+  histLinks[i].addEventListener('click', toggleDropdown);
+};
 
-next.addEventListener("click", e => {
-  carousel.scrollBy(width + gap, 0);
-  if (carousel.scrollWidth !== 0) {
-    prev.style.display = "flex";
-  }
-  if (content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "none";
-  }
-});
-prev.addEventListener("click", e => {
-  carousel.scrollBy(-(width + gap), 0);
-  if (carousel.scrollLeft - width - gap <= 0) {
-    prev.style.display = "none";
-  }
-  if (!content.scrollWidth - width - gap <= carousel.scrollLeft + width) {
-    next.style.display = "flex";
-  }
-});
 
-let width = carousel.offsetWidth;
-window.addEventListener("resize", e => (width = carousel.offsetWidth));
+//for Color change
+
+var colorChange = document.getElementsByClassName('color');
+
+function myFunction() {
+  document.getElementById('color-change').style.color = "#d9cfba";
+};
+
+
+for(i=0; i<colorChange.length; i++) {
+colorChange[i].addEventListener('click', myFunction);
+};
+
+
+var colorChange1 = document.getElementsByClassName('color1');
+
+function myFunction1() {
+  document.getElementById('color-change1').style.color = "#d9cfba";
+};
+
+
+for(i=0; i<colorChange1.length; i++) {
+colorChange1[i].addEventListener('click', myFunction1);
+};
+
+
+
+var colorChange2 = document.getElementsByClassName('color2');
+
+function myFunction2() {
+  document.getElementById('color-change2').style.color = "#d9cfba";
+};
+
+
+for(i=0; i<colorChange2.length; i++) {
+colorChange2[i].addEventListener('click', myFunction2);
+};
