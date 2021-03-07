@@ -441,7 +441,33 @@ footer ul li {
   transition: height 1s;
 }
 
+/* Rehabilitation Page */
 
+.rehab {
+  background-image: url("images/rehabilitation.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.main-content {
+  max-width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 200px 0;
+}
+
+.para1, .para2 {
+  max-width: 600px;
+  padding: 0px 15px;
+}
+
+.main-content p {
+  padding-top: 50px;
+}
 
 
 @media only screen and (max-device-width: 1366px) {
@@ -511,6 +537,10 @@ footer ul li {
   .turtle {
     max-width: 600px;
     width: 100%;
+  }
+
+  .main-content {
+    padding: 50px 20px 80px 20px;
   }
 }
 
@@ -591,6 +621,11 @@ footer ul li {
 
   .nav-links li {
     margin-top: 36px;
+  }
+
+  .main-content {
+    display: block;
+    padding: 50px 20px 80px 20px;
   }
 }
 
