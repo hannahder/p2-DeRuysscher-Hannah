@@ -279,32 +279,13 @@ body {
 /* End Carousel */
 
 /* API */
-
-
-.nesting-section {
-  display: flex;
-  flex-flow: row;
-  padding-top: 116px;
+.weather-section {
+  max-width: 1250px;
+  margin: auto;
+  padding: 300px 0 200px 0;
 }
 
-.florida {
-  max-width: 600px;
-}
-
-.nesting-section h1 {
-  padding-top: 300px;
-  padding-bottom: 50px;
-}
-
-.nesting-numbers h3 {
-  padding-bottom: 50px;
-}
-
-.nesting-numbers {
-  display: flex;
-  flex-direction: column;
-  padding-left: 100px;
-}
+/* How You Can Help Section */
 
 .learn {
   background-image: url("images/underwater.jpg");
@@ -393,6 +374,10 @@ footer ul li {
   margin: auto;
   height: 400px;
   padding-top: 200px;
+}
+
+#about-text {
+  color: black;
 }
 
 .about-us h1 {
@@ -519,13 +504,18 @@ footer ul li {
     padding-left: 40px;
     padding-right: 20px;
   }
+
   #bckgd {
     height: 900px;
   }
 
-
   #bckgd h1 {
     padding-left: 40px;
+  }
+
+  .weather-section {
+    padding-left: 20px;
+    padding-right: 10px;
   }
 }
 
@@ -591,30 +581,6 @@ footer ul li {
     padding-bottom: 20px;
   }
 
-  .nesting-section {
-    background-image: url("images/florida.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-flow: column wrap;
-    margin: auto;
-    width: 100%;
-    max-width: 600px;
-    padding: 0;
-  }
-
-  .nesting-section h1 {
-    padding-top: 100px;
-  }
-
-  .nesting-numbers {
-    height: 570px;
-    padding-left: 30px;
-  }
-
-  .florida {
-    display: none;
-  }
-
   .logo {
     display: none;
   }
@@ -632,23 +598,5 @@ footer ul li {
 @media (min-width: 1300px) {
   .masonry {
     columns: 2;
-  }
-}
-
-@media (min-width: 782px) {
-  .nesting-numbers {
-    margin-left: -200px;
-  }
-
-  .nesting-section {
-    margin: auto;
-    max-width: 1250px;
-  }
-}
-
-
-@media (min-width: 347px) and (max-width: 781px) {
-  .adopt-container {
-    margin-bottom: 184px;
   }
 }
