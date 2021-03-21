@@ -285,6 +285,14 @@ body {
   padding: 300px 0 200px 0;
 }
 
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 /* How You Can Help Section */
 
 .learn {
