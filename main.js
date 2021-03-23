@@ -73,7 +73,7 @@ xmlhttp.onreadystatechange = function() {
 
         //Code Dealing With The API Data Goes Here
         function showMessage() {
-        var message = document.createElement('p');
+        var message = document.createElement('span');
         weatherState.appendChild(message);
         var text = document.createTextNode(apiResult.properties.periods[0].temperature);
         message.appendChild(text);
