@@ -42,7 +42,7 @@ xmlhttp.onreadystatechange = function() {
         let justOptimal = () => {
           let temperature = apiResult.properties.periods[0].temperature;
           let optimalTemp = document.getElementById("optimal");
-          if (Number(temperature) >= 74 && Number(temperature) <= 86) {
+          if (Number(temperature) >= 51 && Number(temperature) <= 89) {
             optimalTemp.classList.remove("hide");
             } else {
           }
